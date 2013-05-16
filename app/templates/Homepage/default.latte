@@ -1,14 +1,4 @@
 {#content}
-<table n:inner-foreach="$table as $team">
-	<tr>
-		<td>
-			{$iterator->counter}.
-		</td>
-		<td>
-			{$team->name}
-		</td>
-		<td>
-			{$team->points}
-		</td>
-	</tr>
-</table>
+<ul n:inner-foreach="$table as $team" data-role="listview" data-count-theme="c">
+    <li>{$team->name} <span class="ui-li-count">{$team->points} pts.</span></li>
+</ul>
