@@ -1,9 +1,6 @@
 FC Vlcovice-Mnisi Table
 =======================
 
-Application:
-------------
-
 App is currently live on AppFog, see [http://bit.ly/vlc-mns](http://bit.ly/vlc-mns).
 
 Installing
