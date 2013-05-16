@@ -32,13 +32,11 @@ class HomepagePresenter extends BasePresenter
 		$table = $this->cache->load('table');
 
 		if (!$table) {
+			$table = $this->extractorService->extract($this->context->parameters['tableSource']);
+
 			$this->cache->save('table', $table, array(
 				Cache::EXPIRE => '+ 7 days'
 			));
-
-			$this->getParameter('foo');
-
-			$table = $this->cache['table'] = $this->extractorService->extract($this->context->parameters['tableSource']);
 		}
 
 		$this->template->table = $table;
