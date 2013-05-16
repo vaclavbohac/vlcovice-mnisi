@@ -1,18 +1,58 @@
 {
-    "hash": "0c575d893558a8f4d9007d4c4cad3432",
+    "hash": "3d13afd718a41fcd75462f23c7176c87",
     "packages": [
+        {
+            "name": "electrolinux/phpquery",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/electrolinux/phpquery.git",
+                "reference": "0.9.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/electrolinux/phpquery/zipball/0.9.6",
+                "reference": "0.9.6",
+                "shasum": ""
+            },
+            "time": "2013-03-21 12:39:33",
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "phpQuery/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobiasz Cudnik",
+                    "email": "tobiasz.cudnik@gmail.com",
+                    "homepage": "https://github.com/TobiaszCudnik",
+                    "role": "Developer"
+                },
+                {
+                    "name": "didier Belot",
+                    "role": "Packager"
+                }
+            ],
+            "description": "phpQuery is a server-side, chainable, CSS3 selector driven Document Object Model (DOM) API based on jQuery JavaScript Library",
+            "homepage": "http://code.google.com/p/phpquery/"
+        },
         {
             "name": "nette/nette",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "ddc48efbe5cfc223515ef5143eae5867bb3a09fb"
+                "reference": "32d6d9705d7c754910e0f72ac5ffd36bfa86d512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/ddc48efbe5cfc223515ef5143eae5867bb3a09fb",
-                "reference": "ddc48efbe5cfc223515ef5143eae5867bb3a09fb",
+                "url": "https://api.github.com/repos/nette/nette/zipball/32d6d9705d7c754910e0f72ac5ffd36bfa86d512",
+                "reference": "32d6d9705d7c754910e0f72ac5ffd36bfa86d512",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +70,7 @@
                 "ext-memcache": "*",
                 "ext-pdo": "*"
             },
-            "time": "2013-05-10 20:12:50",
+            "time": "2013-05-16 11:09:43",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -76,65 +116,14 @@
             ]
         }
     ],
-    "packages-dev": [
-        {
-            "name": "nette/tester",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/tester.git",
-                "reference": "dd4f7e25ff6175b598cbc3462ca13a411e3c27f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/dd4f7e25ff6175b598cbc3462ca13a411e3c27f4",
-                "reference": "dd4f7e25ff6175b598cbc3462ca13a411e3c27f4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "time": "2013-04-25 13:48:02",
-            "bin": [
-                "Tester/tester"
-            ],
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "Tester/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "http://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "http://nette.org/contributors"
-                }
-            ],
-            "description": "An easy-to-use PHP Unit Testing framework.",
-            "homepage": "http://nette.org",
-            "keywords": [
-                "nette",
-                "testing",
-                "unit"
-            ]
-        }
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
     "minimum-stability": "stable",
     "stability-flags": {
         "nette/nette": 20,
+        "electrolinux/phpquery": 20,
         "nette/tester": 20
     }
 }

@@ -5,6 +5,8 @@
 # http://nette.org/security-warning
 #
 parameters:
+	tableCacheName: tables
+	tableSource: 'http://vysledky.lidovky.cz/soutez.php?id_soutez=5936'
 
 php:
 	date.timezone: Europe/Prague
@@ -21,9 +23,11 @@ nette:
 
 
 services:
-	- Model\UserManager
 	- App\RouterFactory
 	router: @App\RouterFactory::createRouter
 
+	tableCache:	Nette\Caching\Cache(@cacheStorage, %tableCacheName%)
+
+	extractorService: Services\ExtractorService
 
 factories:

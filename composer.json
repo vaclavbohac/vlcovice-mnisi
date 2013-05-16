@@ -18,7 +18,8 @@
 	},
 	"require": {
 		"php": ">= 5.3.0",
-		"nette/nette": "@dev"
+		"nette/nette": "@dev",
+		"electrolinux/phpquery": "dev-master"
 	},
     "require-dev": {
         "nette/tester": "@dev"

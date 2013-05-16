@@ -14,10 +14,13 @@ $configurator->enableDebugger(__DIR__ . '/../log');
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
 // Enable RobotLoader - this will load all classes automatically
-$configurator->createRobotLoader()
+$robotLoader = $configurator->createRobotLoader()
 	->addDirectory(__DIR__)
-	->addDirectory(__DIR__ . '/../libs')
-	->register();
+	->addDirectory(__DIR__ . '/../libs');
+
+$robotLoader->ignoreDirs .= ', test-cases';
+
+$robotLoader->register();
 
 // Create Dependency Injection container from config.neon file
 $configurator->addConfig(__DIR__ . '/config/config.neon');
